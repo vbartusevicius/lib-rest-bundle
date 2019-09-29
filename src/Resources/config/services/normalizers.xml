@@ -5,21 +5,22 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
         <service class="Maba\Bundle\RestBundle\Normalizer\ViolationNormalizer"
-                 id="paysera_rest.normalizer.violation">
+                 id="Maba\Bundle\RestBundle\Normalizer\ViolationNormalizer">
             <tag name="paysera_normalization.autoconfigured_normalizer"/>
         </service>
 
-        <service class="Maba\Bundle\RestBundle\Normalizer\ErrorNormalizer" id="paysera_rest.normalizer.error">
+        <service class="Maba\Bundle\RestBundle\Normalizer\ErrorNormalizer"
+                 id="Maba\Bundle\RestBundle\Normalizer\ErrorNormalizer">
             <tag name="paysera_normalization.autoconfigured_normalizer"/>
         </service>
 
         <service class="Maba\Bundle\RestBundle\Normalizer\Pagination\ResultNormalizer"
-                 id="paysera_rest.normalizer.result">
+                 id="Maba\Bundle\RestBundle\Normalizer\Pagination\ResultNormalizer">
             <tag name="paysera_normalization.autoconfigured_normalizer"/>
         </service>
 
         <service class="Maba\Bundle\RestBundle\Normalizer\Pagination\PagerDenormalizer"
-                 id="paysera_rest.normalizer.pager_denormalizer">
+                 id="Maba\Bundle\RestBundle\Normalizer\Pagination\PagerDenormalizer">
             <tag name="paysera_normalization.autoconfigured_normalizer"/>
         </service>
     </services>
