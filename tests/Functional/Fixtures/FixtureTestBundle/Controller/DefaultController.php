@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Controller;
+namespace Maba\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Controller;
 
-use Paysera\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Entity\MyObject;
+use Maba\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Entity\MyObject;
 use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController

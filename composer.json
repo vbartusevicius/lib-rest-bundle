@@ -1,17 +1,17 @@
 {
-    "name": "paysera/lib-rest-bundle",
+    "name": "maba/fork-paysera-lib-rest-bundle",
     "description": "Symfony bundle that allows easy configuration for your REST endpoints.",
     "keywords": ["REST", "RESTful", "API"],
     "type": "symfony-bundle",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Paysera\\Bundle\\RestBundle\\": "src"
+            "Maba\\Bundle\\RestBundle\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Paysera\\Bundle\\RestBundle\\Tests\\": "tests"
+            "Maba\\Bundle\\RestBundle\\Tests\\": "tests"
         }
     },
     "require": {

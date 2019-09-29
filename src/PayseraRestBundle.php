@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle;
+namespace Maba\Bundle\RestBundle;
 
 use Paysera\Component\DependencyInjection\AddTaggedCompilerPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -26,5 +26,14 @@ class PayseraRestBundle extends Bundle
             'registerPathAttributeResolver',
             ['type']
         ));
+    }
+
+    public function getContainerExtension()
+    {
+        if ($this->extension === null) {
+            $this->extension = $this->createContainerExtension();
+        }
+
+        return $this->extension;
     }
 }

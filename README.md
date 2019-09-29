@@ -9,6 +9,15 @@
 
 Symfony bundle that allows easy configuration for your REST endpoints.
 
+`master` branch in this repository has changed namespace
+(`Paysera\Bundle\RestBundle` -> `Maba\Bundle\RestBundle`) and container extension
+(`paysera_rest` -> `maba_paysera_rest`).
+
+This is done so that the fork could be tested together with the old bundle version via
+`maba/fork-paysera-lib-rest-bundle` package.
+
+See `paysera` branch in this repository for the original fork.
+
 ## Why?
 
 If you write quite many REST endpoints, some of the code or the structure itself gets repeated. If you want to add
@@ -38,19 +47,19 @@ It's a bit more boilerplate, but easily customisable when needed.
 ## Installation
 
 ```bash
-composer require paysera/lib-rest-bundle
+composer require maba/fork-paysera-lib-rest-bundle
 ```
 
 If you're not using symfony flex, add the following bundles to your kernel:
 ```
 new PayseraNormalizationBundle(),
-new PayseraRestBundle(),
+new \Maba\Bundle\RestBundle\PayseraRestBundle(),
 ```
 
 ## Configuration
 
 ```yaml
-paysera_rest:
+maba_paysera_rest:
     locales: ['en', 'lt', 'lv']     # Optional list of accepted locales
     validation:
         property_path_converter: your_service_id    # Optional service ID to use for property path converter
@@ -114,7 +123,7 @@ Controller example:
 declare(strict_types=1);
 
 use Symfony\Component\Routing\Annotation\Route;
-use Paysera\Bundle\RestBundle\Annotation\Body;
+use Maba\Bundle\RestBundle\Annotation\Body;
 
 class ApiController
 {
@@ -147,7 +156,7 @@ Controller example:
 declare(strict_types=1);
 
 use Symfony\Component\Routing\Annotation\Route;
-use Paysera\Bundle\RestBundle\Annotation\PathAttribute;
+use Maba\Bundle\RestBundle\Annotation\PathAttribute;
 
 class ApiController
 {
@@ -207,7 +216,7 @@ Use autoconfiguration or tag service with `paysera_normalization.mixed_type_deno
 2. Reusing `RepositoryAwareEntityDenormalizer` class to configure the needed service. For example:
 
 ```xml
-<service class="Paysera\Bundle\RestBundle\Service\Doctrine\FindEntityDenormalizer"
+<service class="Maba\Bundle\RestBundle\Service\Doctrine\FindEntityDenormalizer"
          id="find_user_denormalizer">
     <tag name="paysera_normalization.mixed_type_denormalizer"/>
 
@@ -239,7 +248,7 @@ Controller example:
 declare(strict_types=1);
 
 use Symfony\Component\Routing\Annotation\Route;
-use Paysera\Bundle\RestBundle\Annotation\Query;
+use Maba\Bundle\RestBundle\Annotation\Query;
 use Paysera\Pagination\Entity\Pager;
 
 class ApiController
@@ -436,14 +445,14 @@ and tagging it with `paysera_rest.request_options`.
 Example:
 ```xml
 <service id="paysera_fixture_test.rest_request_options.1"
-         class="Paysera\Bundle\RestBundle\Entity\RestRequestOptions">
+         class="Maba\Bundle\RestBundle\Entity\RestRequestOptions">
     <tag name="paysera_rest.request_options" controller="service_id::action"/>
     <tag name="paysera_rest.request_options" controller="App\Controller\DefaultController::action"/>
 
     <!-- set any options similarly to this -->
     <call method="addQueryResolverOptions">
         <argument type="service">
-            <service class="Paysera\Bundle\RestBundle\Entity\QueryResolverOptions">
+            <service class="Maba\Bundle\RestBundle\Entity\QueryResolverOptions">
                 <call method="setDenormalizationType">
                     <argument>extract:parameter</argument>
                 </call>
@@ -484,13 +493,13 @@ composer fix-cs
 
 [ico-version]: https://img.shields.io/packagist/v/paysera/lib-rest-bundle.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/paysera/lib-rest-bundle/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/paysera/lib-rest-bundle.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/paysera/lib-rest-bundle.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/mariusbalcytis/lib-rest-bundle/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/mariusbalcytis/lib-rest-bundle.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/mariusbalcytis/lib-rest-bundle.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/paysera/lib-rest-bundle.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/paysera/lib-rest-bundle
-[link-travis]: https://travis-ci.org/paysera/lib-rest-bundle
-[link-scrutinizer]: https://scrutinizer-ci.com/g/paysera/lib-rest-bundle/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/paysera/lib-rest-bundle
+[link-travis]: https://travis-ci.org/mariusbalcytis/lib-rest-bundle
+[link-scrutinizer]: https://scrutinizer-ci.com/g/mariusbalcytis/lib-rest-bundle/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/mariusbalcytis/lib-rest-bundle
 [link-downloads]: https://packagist.org/packages/paysera/lib-rest-bundle

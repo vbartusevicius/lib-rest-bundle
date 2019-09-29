@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Service\Annotation;
+namespace Maba\Bundle\RestBundle\Service\Annotation;
 
-use Paysera\Bundle\RestBundle\Annotation\RestAnnotationInterface;
-use Paysera\Bundle\RestBundle\Service\RestRequestHelper;
+use Maba\Bundle\RestBundle\Annotation\RestAnnotationInterface;
+use Maba\Bundle\RestBundle\Service\RestRequestHelper;
 use Symfony\Bundle\FrameworkBundle\Routing\AnnotatedRouteControllerLoader;
 use Symfony\Component\Routing\Route;
 use ReflectionClass;

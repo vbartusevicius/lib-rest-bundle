@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Tests\Unit\Service\Validation;
+namespace Maba\Bundle\RestBundle\Tests\Unit\Service\Validation;
 
-use Paysera\Bundle\RestBundle\Service\Validation\CamelCaseToSnakeCaseConverter;
+use Maba\Bundle\RestBundle\Service\Validation\CamelCaseToSnakeCaseConverter;
 use PHPUnit\Framework\TestCase;
 
 class CamelCaseToSnakeCaseConverterTest extends TestCase

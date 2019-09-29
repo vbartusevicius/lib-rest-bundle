@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Tests\Functional\Fixtures;
+namespace Maba\Bundle\RestBundle\Tests\Functional\Fixtures;
 
 use Doctrine\Bundle\DoctrineBundle\DoctrineBundle;
 use Paysera\Bundle\NormalizationBundle\PayseraNormalizationBundle;
-use Paysera\Bundle\RestBundle\PayseraRestBundle;
-use Paysera\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\PayseraFixtureTestBundle;
+use Maba\Bundle\RestBundle\PayseraRestBundle;
+use Maba\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\PayseraFixtureTestBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\SecurityBundle\SecurityBundle;
 use Symfony\Component\HttpKernel\Kernel;

@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Service;
+namespace Maba\Bundle\RestBundle\Service;
 
 use InvalidArgumentException;
-use Paysera\Bundle\RestBundle\Entity\RestRequestOptions;
-use Paysera\Bundle\RestBundle\Exception\ConfigurationException;
-use Paysera\Bundle\RestBundle\Service\PathAttributeResolver\PathAttributeResolverRegistry;
+use Maba\Bundle\RestBundle\Entity\RestRequestOptions;
+use Maba\Bundle\RestBundle\Exception\ConfigurationException;
+use Maba\Bundle\RestBundle\Service\PathAttributeResolver\PathAttributeResolverRegistry;
 use Paysera\Component\Normalization\NormalizerRegistryInterface;
 
 class RestRequestOptionsValidator

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Entity;
+namespace Maba\Bundle\RestBundle\Entity;
 
 use RuntimeException;
 

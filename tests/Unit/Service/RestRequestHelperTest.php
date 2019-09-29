@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Tests\Unit\Service;
+namespace Maba\Bundle\RestBundle\Tests\Unit\Service;
 
 use Mockery;
 use Mockery\Adapter\Phpunit\MockeryTestCase;
-use Paysera\Bundle\RestBundle\Entity\RestRequestOptions;
-use Paysera\Bundle\RestBundle\Service\RestRequestHelper;
-use Paysera\Bundle\RestBundle\Service\RestRequestOptionsRegistry;
+use Maba\Bundle\RestBundle\Entity\RestRequestOptions;
+use Maba\Bundle\RestBundle\Service\RestRequestHelper;
+use Maba\Bundle\RestBundle\Service\RestRequestOptionsRegistry;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Route;
 

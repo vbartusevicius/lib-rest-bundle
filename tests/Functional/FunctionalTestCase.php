@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Tests\Functional;
+namespace Maba\Bundle\RestBundle\Tests\Functional;
 
-use Paysera\Bundle\RestBundle\Tests\Functional\Fixtures\TestKernel;
+use Maba\Bundle\RestBundle\Tests\Functional\Fixtures\TestKernel;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\DependencyInjection\ResettableContainerInterface;

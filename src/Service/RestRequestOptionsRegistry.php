@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Service;
+namespace Maba\Bundle\RestBundle\Service;
 
-use Paysera\Bundle\RestBundle\Entity\RestRequestOptions;
+use Maba\Bundle\RestBundle\Entity\RestRequestOptions;
 
 /**
  * @internal

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Tests\Unit\Service;
+namespace Maba\Bundle\RestBundle\Tests\Unit\Service;
 
-use Paysera\Bundle\RestBundle\Service\ContentTypeMatcher;
+use Maba\Bundle\RestBundle\Service\ContentTypeMatcher;
 use PHPUnit\Framework\TestCase;
 
 class ContentTypeMatcherTest extends TestCase

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Listener;
+namespace Maba\Bundle\RestBundle\Listener;
 
-use Paysera\Bundle\RestBundle\Service\RestRequestHelper;
+use Maba\Bundle\RestBundle\Service\RestRequestHelper;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\Event\RequestEvent;

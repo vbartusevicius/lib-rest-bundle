@@ -22,14 +22,14 @@ to still use older version of configuration. For new endpoints, use new configur
   
 - `property_path_converter` configuration option was moved to `validation` group
 
-- `Paysera\Bundle\RestBundle\Entity\Error` and `Paysera\Bundle\RestBundle\Exception\ApiException`
-should now receive and operate `Paysera\Bundle\RestBundle\Entity\Violation` instead of 
+- `Maba\Bundle\RestBundle\Entity\Error` and `Maba\Bundle\RestBundle\Exception\ApiException`
+should now receive and operate `Maba\Bundle\RestBundle\Entity\Violation` instead of 
 `Paysera\Component\Serializer\Entity\Violation`.
 
-- `Paysera\Bundle\RestBundle\Entity\Error::create` method removed, constructor also does not take
+- `Maba\Bundle\RestBundle\Entity\Error::create` method removed, constructor also does not take
 any arguments anymore.
 
-- `Paysera\Bundle\RestBundle\Normalizer\ErrorNormalizer` class changed to implement interfaces from
+- `Maba\Bundle\RestBundle\Normalizer\ErrorNormalizer` class changed to implement interfaces from
 `lib-normalization` instead of `lib-serializer`. If you still need it, change usages from
 `paysera_rest.normalizer.error` to `paysera_rest_migration.normalizer.error` when upgrading.
 
@@ -42,7 +42,7 @@ and response cannot be cached inside the browser for security reasons.
 
 ## 4.2.1
 ### Changed
-- `\Paysera\Bundle\RestBundle\RestApi::getValidationGroups()` no longer returns `null` if `\Paysera\Bundle\RestBundle\RestApi::$globalValidationGroups` is empty.
+- `\Maba\Bundle\RestBundle\RestApi::getValidationGroups()` no longer returns `null` if `\Maba\Bundle\RestBundle\RestApi::$globalValidationGroups` is empty.
 
 ## 4.2.0
 ### Added
@@ -53,22 +53,22 @@ and response cannot be cached inside the browser for security reasons.
 
 ## 4.1.1
 ### Added
-- Moved `Paysera\Bundle\RestBundle\Listener\RestListener::onKernelException` logging to service `Paysera\Bundle\RestBundle\Service\ExceptionLogger`
+- Moved `Maba\Bundle\RestBundle\Listener\RestListener::onKernelException` logging to service `Maba\Bundle\RestBundle\Service\ExceptionLogger`
 
 ## 4.0.0
 ###  Changed
-- `Paysera\Bundle\RestBundle\RestApi` property `propertyPathConverter` now has default value set to `CamelCaseToSnakeCaseConverter`
+- `Maba\Bundle\RestBundle\RestApi` property `propertyPathConverter` now has default value set to `CamelCaseToSnakeCaseConverter`
 
 ## 3.0.0
 ### Changed 
-- `Paysera\Bundle\RestBundle\Entity\Error` all properties are now private instead of protected
-- `Paysera\Bundle\RestBundle\Exception\ApiException` all properties are private instead of protected
-- `Paysera\Bundle\RestBundle\Exception\ApiException` 7th construct argument now is `violation` of type `Violation[]` instead of `codes` of type `string[]`
+- `Maba\Bundle\RestBundle\Entity\Error` all properties are now private instead of protected
+- `Maba\Bundle\RestBundle\Exception\ApiException` all properties are private instead of protected
+- `Maba\Bundle\RestBundle\Exception\ApiException` 7th construct argument now is `violation` of type `Violation[]` instead of `codes` of type `string[]`
 - 400 error response will no longer contain `errors` property instead if `error_properties_codes` property
 ### Removed
-- `Paysera\Bundle\RestBundle\Entity\Error` removed `errorCodes` property and related getters/setters
-- `Paysera\Bundle\RestBundle\Entity\Error` removed `toArray` method
-- `Paysera\Bundle\RestBundle\Exception\ApiException` removed property getter and setter of `codes` property
+- `Maba\Bundle\RestBundle\Entity\Error` removed `errorCodes` property and related getters/setters
+- `Maba\Bundle\RestBundle\Entity\Error` removed `toArray` method
+- `Maba\Bundle\RestBundle\Exception\ApiException` removed property getter and setter of `codes` property
 
 ## 2.1.0
 ### Changed

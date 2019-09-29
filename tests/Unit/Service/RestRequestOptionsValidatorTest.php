@@ -2,19 +2,19 @@
 /** @noinspection PhpMethodParametersCountMismatchInspection */
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Tests\Unit\Service;
+namespace Maba\Bundle\RestBundle\Tests\Unit\Service;
 
 use InvalidArgumentException;
 use Mockery;
 use Mockery\Adapter\Phpunit\MockeryTestCase;
 use Mockery\MockInterface;
-use Paysera\Bundle\RestBundle\Entity\PathAttributeResolverOptions;
-use Paysera\Bundle\RestBundle\Entity\QueryResolverOptions;
-use Paysera\Bundle\RestBundle\Entity\RestRequestOptions;
-use Paysera\Bundle\RestBundle\Exception\ConfigurationException;
-use Paysera\Bundle\RestBundle\Service\PathAttributeResolver\PathAttributeResolverInterface;
-use Paysera\Bundle\RestBundle\Service\PathAttributeResolver\PathAttributeResolverRegistry;
-use Paysera\Bundle\RestBundle\Service\RestRequestOptionsValidator;
+use Maba\Bundle\RestBundle\Entity\PathAttributeResolverOptions;
+use Maba\Bundle\RestBundle\Entity\QueryResolverOptions;
+use Maba\Bundle\RestBundle\Entity\RestRequestOptions;
+use Maba\Bundle\RestBundle\Exception\ConfigurationException;
+use Maba\Bundle\RestBundle\Service\PathAttributeResolver\PathAttributeResolverInterface;
+use Maba\Bundle\RestBundle\Service\PathAttributeResolver\PathAttributeResolverRegistry;
+use Maba\Bundle\RestBundle\Service\RestRequestOptionsValidator;
 use Paysera\Component\Normalization\NormalizerRegistryInterface;
 
 class RestRequestOptionsValidatorTest extends MockeryTestCase

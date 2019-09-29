@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Service;
+namespace Maba\Bundle\RestBundle\Service;
 
 use Exception;
-use Paysera\Bundle\RestBundle\Entity\Error;
+use Maba\Bundle\RestBundle\Entity\Error;
 
 interface ErrorBuilderInterface
 {

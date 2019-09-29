@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Tests\Functional;
+namespace Maba\Bundle\RestBundle\Tests\Functional;
 
-use Paysera\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Entity\SimplePersistedEntity;
-use Paysera\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Entity\PersistedEntity;
+use Maba\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Entity\SimplePersistedEntity;
+use Maba\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Entity\PersistedEntity;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 use Symfony\Component\Console\Tester\CommandTester;
 

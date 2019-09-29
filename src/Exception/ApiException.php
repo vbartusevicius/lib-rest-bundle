@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Exception;
+namespace Maba\Bundle\RestBundle\Exception;
 
 use Exception;
-use Paysera\Bundle\RestBundle\Entity\Violation;
+use Maba\Bundle\RestBundle\Entity\Violation;
 
 class ApiException extends Exception
 {

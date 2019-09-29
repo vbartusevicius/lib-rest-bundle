@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Annotation;
+namespace Maba\Bundle\RestBundle\Annotation;
 
-use Paysera\Bundle\RestBundle\Entity\RestRequestOptions;
-use Paysera\Bundle\RestBundle\Exception\ConfigurationException;
-use Paysera\Bundle\RestBundle\Service\Annotation\ReflectionMethodWrapper;
+use Maba\Bundle\RestBundle\Entity\RestRequestOptions;
+use Maba\Bundle\RestBundle\Exception\ConfigurationException;
+use Maba\Bundle\RestBundle\Service\Annotation\ReflectionMethodWrapper;
 
 /**
  * @Annotation

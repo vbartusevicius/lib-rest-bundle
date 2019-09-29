@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Controller;
+namespace Maba\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Controller;
 
-use Paysera\Bundle\RestBundle\Annotation\Body;
-use Paysera\Bundle\RestBundle\Annotation\BodyContentType;
-use Paysera\Bundle\RestBundle\Annotation\PathAttribute;
-use Paysera\Bundle\RestBundle\Annotation\Query;
-use Paysera\Bundle\RestBundle\Annotation\RequiredPermissions;
-use Paysera\Bundle\RestBundle\Annotation\ResponseNormalization;
-use Paysera\Bundle\RestBundle\Annotation\Validation;
-use Paysera\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Entity\MyObject;
+use Maba\Bundle\RestBundle\Annotation\Body;
+use Maba\Bundle\RestBundle\Annotation\BodyContentType;
+use Maba\Bundle\RestBundle\Annotation\PathAttribute;
+use Maba\Bundle\RestBundle\Annotation\Query;
+use Maba\Bundle\RestBundle\Annotation\RequiredPermissions;
+use Maba\Bundle\RestBundle\Annotation\ResponseNormalization;
+use Maba\Bundle\RestBundle\Annotation\Validation;
+use Maba\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Entity\MyObject;
 use Paysera\Pagination\Entity\Pager;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;

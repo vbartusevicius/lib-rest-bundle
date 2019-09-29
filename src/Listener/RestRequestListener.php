@@ -1,21 +1,21 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Listener;
+namespace Maba\Bundle\RestBundle\Listener;
 
-use Paysera\Bundle\RestBundle\Entity\RestRequestOptions;
-use Paysera\Bundle\RestBundle\Exception\ForbiddenApiException;
-use Paysera\Bundle\RestBundle\Exception\NotFoundApiException;
-use Paysera\Bundle\RestBundle\Service\ContentTypeMatcher;
-use Paysera\Bundle\RestBundle\Service\PathAttributeResolver\PathAttributeResolutionManager;
-use Paysera\Bundle\RestBundle\Service\RestRequestHelper;
-use Paysera\Bundle\RestBundle\Service\Validation\EntityValidator;
+use Maba\Bundle\RestBundle\Entity\RestRequestOptions;
+use Maba\Bundle\RestBundle\Exception\ForbiddenApiException;
+use Maba\Bundle\RestBundle\Exception\NotFoundApiException;
+use Maba\Bundle\RestBundle\Service\ContentTypeMatcher;
+use Maba\Bundle\RestBundle\Service\PathAttributeResolver\PathAttributeResolutionManager;
+use Maba\Bundle\RestBundle\Service\RestRequestHelper;
+use Maba\Bundle\RestBundle\Service\Validation\EntityValidator;
 use Paysera\Component\Normalization\CoreDenormalizer;
 use Paysera\Component\Normalization\DenormalizationContext;
 use Paysera\Component\ObjectWrapper\Exception\InvalidItemException;
 use Symfony\Component\HttpFoundation\Request;
 use Paysera\Component\Normalization\Exception\InvalidDataException;
-use Paysera\Bundle\RestBundle\Exception\ApiException;
+use Maba\Bundle\RestBundle\Exception\ApiException;
 use Symfony\Component\HttpKernel\Event\ControllerEvent;
 use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
 use Symfony\Component\Security\Core\Authentication\Token\AnonymousToken;

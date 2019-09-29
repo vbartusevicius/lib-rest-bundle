@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Service\Annotation;
+namespace Maba\Bundle\RestBundle\Service\Annotation;
 
-use Paysera\Bundle\RestBundle\Exception\ConfigurationException;
+use Maba\Bundle\RestBundle\Exception\ConfigurationException;
 use ReflectionMethod;
 use ReflectionParameter;
 

@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Tests\Unit\Service;
+namespace Maba\Bundle\RestBundle\Tests\Unit\Service;
 
 use InvalidArgumentException;
 use JsonSerializable;
-use Paysera\Bundle\RestBundle\Service\ResponseBuilder;
+use Maba\Bundle\RestBundle\Service\ResponseBuilder;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
 use Symfony\Component\HttpFoundation\Response;

@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Tests\Unit\Service\Validation;
+namespace Maba\Bundle\RestBundle\Tests\Unit\Service\Validation;
 
 use Mockery;
-use Paysera\Bundle\RestBundle\Entity\ValidationOptions;
-use Paysera\Bundle\RestBundle\Entity\Violation;
-use Paysera\Bundle\RestBundle\Exception\ApiException;
-use Paysera\Bundle\RestBundle\Service\Validation\EntityValidator;
-use Paysera\Bundle\RestBundle\Service\Validation\PropertyPathConverterInterface;
+use Maba\Bundle\RestBundle\Entity\ValidationOptions;
+use Maba\Bundle\RestBundle\Entity\Violation;
+use Maba\Bundle\RestBundle\Exception\ApiException;
+use Maba\Bundle\RestBundle\Service\Validation\EntityValidator;
+use Maba\Bundle\RestBundle\Service\Validation\PropertyPathConverterInterface;
 use Mockery\Adapter\Phpunit\MockeryTestCase;
 use stdClass;
 use Symfony\Component\Validator\Constraints\Type;

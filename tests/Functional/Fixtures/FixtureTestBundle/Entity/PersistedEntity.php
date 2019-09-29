@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Entity;
+namespace Maba\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\PathAttributeResolver;
+namespace Maba\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\PathAttributeResolver;
 
-use Paysera\Bundle\RestBundle\Service\PathAttributeResolver\PathAttributeResolverInterface;
-use Paysera\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Entity\MyObject;
+use Maba\Bundle\RestBundle\Service\PathAttributeResolver\PathAttributeResolverInterface;
+use Maba\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Entity\MyObject;
 
 class MyObjectResolver implements PathAttributeResolverInterface
 {

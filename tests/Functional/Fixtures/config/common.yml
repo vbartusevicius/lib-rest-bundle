@@ -39,8 +39,8 @@ services:
         alias: paysera_rest.rest_request_options_registry
         public: true
 
-paysera_rest:
+maba_paysera_rest:
     find_denormalizers:
-        Paysera\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Entity\PersistedEntity:
+        Maba\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Entity\PersistedEntity:
             field: someField
-        Paysera\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Entity\SimplePersistedEntity: ~
+        Maba\Bundle\RestBundle\Tests\Functional\Fixtures\FixtureTestBundle\Entity\SimplePersistedEntity: ~

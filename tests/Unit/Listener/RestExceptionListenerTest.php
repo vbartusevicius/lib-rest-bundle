@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\Tests\Unit\Listener;
+namespace Maba\Bundle\RestBundle\Tests\Unit\Listener;
 
 use Exception;
 use Mockery;
 use Mockery\Adapter\Phpunit\MockeryTestCase;
-use Paysera\Bundle\RestBundle\Entity\Error;
-use Paysera\Bundle\RestBundle\Listener\RestExceptionListener;
-use Paysera\Bundle\RestBundle\Service\ErrorBuilderInterface;
-use Paysera\Bundle\RestBundle\Service\ResponseBuilder;
-use Paysera\Bundle\RestBundle\Service\RestRequestHelper;
+use Maba\Bundle\RestBundle\Entity\Error;
+use Maba\Bundle\RestBundle\Listener\RestExceptionListener;
+use Maba\Bundle\RestBundle\Service\ErrorBuilderInterface;
+use Maba\Bundle\RestBundle\Service\ResponseBuilder;
+use Maba\Bundle\RestBundle\Service\RestRequestHelper;
 use Paysera\Component\Normalization\CoreNormalizer;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;

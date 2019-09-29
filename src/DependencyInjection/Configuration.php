@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Paysera\Bundle\RestBundle\DependencyInjection;
+namespace Maba\Bundle\RestBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
@@ -12,7 +12,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('paysera_rest');
+        $rootNode = $treeBuilder->root('maba_paysera_rest');
 
         $children = $rootNode->children();
         $children->arrayNode('locales')->defaultValue([])->prototype('scalar');
