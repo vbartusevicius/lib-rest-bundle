@@ -13,7 +13,7 @@ use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader;
 
-class PayseraRestExtension extends Extension
+class MabaPayseraRestExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
