@@ -9,6 +9,8 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class PayseraRestBundle extends Bundle
 {
+    protected $name = 'MabaPayseraRestBundle';
+
     public function build(ContainerBuilder $container)
     {
         parent::build($container);
